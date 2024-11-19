@@ -18,3 +18,9 @@ Perfect for spreading holiday cheer and enjoying a delightful countdown to Chris
 The audio files, images, and gifs used in this project were sourced from **Pixabay** and **Pexels**.  
 These platforms provide high-quality, royalty-free content, which I have used with great appreciation.  
 Special thanks to the talented creators who make their work available—this project would not have been possible without them. 🙏  
+
+## Author of the project 
+
+Gonçalo Calçada @gcalcadastudios 19/11/2024 21:49 Lisbon Time (Last Update)
+https://x.com/gcalcadaStudios
+https://ko-fi.com/gcalcadastudios

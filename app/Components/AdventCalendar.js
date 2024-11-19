@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { XMarkIcon } from "@heroicons/react/24/solid";
+
 export default function AdventCalendar() {
   const [openedDays, setOpenedDays] = useState([]);
   const [modalVisible, setModalVisible] = useState(false);
@@ -317,6 +318,15 @@ export default function AdventCalendar() {
             Play Áudio
           </button>
         )}
+
+        <button
+          className="bg-green-500 text-white py-2 px-4 rounded-md mt-4 hover:bg-green-700 transition-colors flex items-center justify-center"
+          aria-label="Support the developer on Ko-fi"
+          onClick={() =>
+            window.open("https://ko-fi.com/gcalcadastudios", "_blank")
+          }>
+          Support the developer on Ko-fi
+        </button>
       </div>
       {modalVisible && (
         <div className="modal-overlay  fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">

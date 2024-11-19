@@ -24,3 +24,9 @@ Special thanks to the talented creators who make their work available—this pro
 Gonçalo Calçada @gcalcadastudios 19/11/2024 21:49 Lisbon Time (Last Update)
 https://x.com/gcalcadaStudios
 https://ko-fi.com/gcalcadastudios
+
+## Bugs
+
+If you detect any bug please report it i apreciate.
+
+## THANK YOU ALL FOR READING MY PROJECT 

@@ -76,10 +76,12 @@ body {
 @media (max-width: 480px) {
   .calendar-container {
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 0;
   }
 }
 @media (max-width: 320px) {
   .calendar-container {
+    margin-top: 0;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     padding: 0 10px;

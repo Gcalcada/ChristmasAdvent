@@ -78,6 +78,9 @@ body {
     grid-template-columns: repeat(3, 1fr);
     margin-top: 0;
   }
+  .home {
+    padding-top: 0;
+  }
 }
 @media (max-width: 320px) {
   .calendar-container {
@@ -100,5 +103,8 @@ body {
   .button {
     font-size: 14px;
     padding: 8px 10px;
+  }
+  .home {
+    padding-top: 0;
   }
 }

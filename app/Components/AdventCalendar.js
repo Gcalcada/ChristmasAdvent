@@ -307,8 +307,8 @@ export default function AdventCalendar() {
         )}
       </div>
       {modalVisible && (
-        <div className="modal-overlay fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-          <div className="modal bg-white border rounded-lg shadow-lg p-6 max-w-md w-full relative">
+        <div className="modal-overlay  fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+          <div className="modal bg-white border mx-4 rounded-lg shadow-lg p-6 max-w-md w-full relative">
             <h2 className="text-left text-xl font-bold mb-4">{titleMessage}</h2>
             <div className="flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-full">
               <div className="  overflow-hidden text-white rounded-md">

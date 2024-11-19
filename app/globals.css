@@ -67,3 +67,36 @@ body {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 768px) {
+  .calendar-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .calendar-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 320px) {
+  .calendar-container {
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .calendar-item {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .header,
+  .footer {
+    font-size: 14px;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+}

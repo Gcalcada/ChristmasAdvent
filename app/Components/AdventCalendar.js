@@ -11,7 +11,7 @@ export default function AdventCalendar() {
   const [subtitleMessage, setSubtitleMessage] = useState("");
   const [audio, setAudio] = useState(null);
   const [isAudioPlaying, setIsAudioPlaying] = useState(false);
-  const calendarMonth = 11; // change for december month = 12
+  const calendarMonth = 12; // change for december month = 12
   const today = new Date();
   const currentDay = today.getDate();
   const currentMonth = today.getMonth() + 1;
@@ -168,6 +168,7 @@ export default function AdventCalendar() {
         ).toISOString(),
       };
       localStorage.setItem(sessionKey, JSON.stringify(newSessionData));
+      console.log(currentMonth);
     }
   }, []);
 
@@ -230,6 +231,25 @@ export default function AdventCalendar() {
     randomAudio.play();
     randomAudio.onended = () => setIsAudioPlaying(false);
   };
+  const getDayClass = (day) => {
+    if (currentMonth !== calendarMonth || day > currentDay) {
+      return "bg-gray-400";
+    }
+    if (openedDays.includes(day)) {
+      return "bg-blue-500";
+    }
+    return "bg-green-500";
+  };
+
+  const getDayCircle = (day) => {
+    if (currentMonth !== calendarMonth || day > currentDay) {
+      return "bg-yellow-400";
+    }
+    if (openedDays.includes(day)) {
+      return "bg-red-500";
+    }
+    return "bg-blue-500";
+  };
   return (
     <div className="calendar-wrapper bg-red-500 p-8">
       <h1 className="text-center text-2xl font-bold text-white mb-4">
@@ -253,21 +273,13 @@ export default function AdventCalendar() {
                     ? `Open day ${day} of the advent calendar`
                     : `Day ${day} of the schedule unavailable`
                 }
-                className={`calendar-day-button w-20 h-20 flex flex-col items-center justify-center border rounded p-6 text-center cursor-pointer transition-all transform hover:scale-105 ${
-                  isOpened
-                    ? "bg-blue-400"
-                    : isDayAvailable
-                    ? "bg-green-400"
-                    : "bg-gray-300 cursor-not-allowed"
-                }`}>
+                className={`calendar-day-button w-20 h-20 flex flex-col items-center justify-center border rounded p-6 text-center cursor-pointer transition-all transform hover:scale-105 calendar-item ${getDayClass(
+                  day
+                )}`}>
                 <div
-                  className={`day-number absolute top-1 right-1 text-lg font-bold rounded-full w-7 h-7 flex items-center justify-center z-20 ${
-                    isOpened
-                      ? "bg-blue-400 text-black"
-                      : isDayAvailable
-                      ? "bg-red-700 text-white"
-                      : "bg-yellow-300 cursor-not-allowed"
-                  }`}>
+                  className={`day-number absolute top-1 right-1 text-lg font-bold rounded-full w-7 h-7 flex items-center justify-center z-20 ${getDayCircle(
+                    day
+                  )}`}>
                   {day}
                 </div>
 

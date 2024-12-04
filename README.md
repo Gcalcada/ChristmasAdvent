@@ -6,7 +6,7 @@ An interactive Christmas-themed advent calendar built with modern web technologi
 
 ## Features
 
-- **Day-by-day unlocking mechanism**: Managed client-side using local storage.
+- **Day by day unlocking mechanism**: Managed client-side using local storage.
 - **Randomized playback of Christmas tunes** for variety.
 - **Responsive and user-friendly design** for seamless use across devices.
 - **Thematic video background** to enhance the festive experience.
@@ -17,7 +17,7 @@ Perfect for spreading holiday cheer and enjoying a delightful countdown to Chris
 
 The audio files, images, and gifs used in this project were sourced from **Pixabay** and **Pexels**.  
 These platforms provide high-quality, royalty-free content, which I have used with great appreciation.  
-Special thanks to the talented creators who make their work available—this project would not have been possible without them. 🙏  
+Special thanks to the talented creators who make their work available this project would not have been possible without them. 🙏  
 
 ## Author of the project 
 
